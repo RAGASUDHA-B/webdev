@@ -10,6 +10,16 @@ const m=(
     
   </table>
 )
+const k=(
+  <ul>
+    <li>mild</li>
+    <li>tea powder1</li>
+    <li>sugar</li>
+  </ul>
+)
 createRoot(document.getElementById('root')).render(
-  m
+  <div>
+    {m}
+    {k}
+  </div>
 )
