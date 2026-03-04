@@ -1,25 +1,21 @@
-import {createRoot} from 'react-dom/client'
-const m=(
-  <table>
-    <tr>
-      <th>class</th>
-    </tr>
-    <tr>
-      <td>c</td>
-    </tr>
-    
-  </table>
-)
-const k=(
-  <ul>
-    <li>mild</li>
-    <li>tea powder1</li>
-    <li>sugar</li>
-  </ul>
-)
+import { createRoot } from 'react-dom/client'
+import Car1 from './vehicle.jsx'
+function Car() {
+  return (
+    <h2>Hi, I am a Car!</h2>
+  );
+}
+function Gar(){
+  return(
+  <>
+  <h1>i am gar</h1>
+  <Car />
+  <Car1 />
+  </>)
+}
+
 createRoot(document.getElementById('root')).render(
-  <div>
-    {m}
-    {k}
-  </div>
-)
+  <Gar />
+);
+
+       
